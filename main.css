@@ -1,0 +1,157 @@
+/* Assignment 1 |Beatriz Goulart Silva| COMP1073 Client-Side JavaScript */
+
+
+@charset "utf-8";
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #b3cde0, #6497b1, #005b96, #03396c, #011f4b);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    margin: 20px 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.top-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.left-side, .right-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 10px;
+    font-size: 14px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Pink buttons */
+#nouns1Button {
+    background-color: #FFC0CB; /* Light Pink */
+}
+
+#verbsButton {
+    background-color: #FFB6C1; /* LightPink */
+}
+
+#adjButton {
+    background-color: #FF69B4; /* HotPink */
+}
+
+#nouns2Button {
+    background-color: #FF1493; /* DeepPink */
+}
+
+#placesButton {
+    background-color: #DB7093; /* PaleVioletRed */
+}
+
+.words-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.words-column {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    min-width: 150px;
+}
+
+#nouns1Container {
+    background-color: #b3cde0; /* Light Blue */
+}
+
+#verbsContainer {
+    background-color: #6497b1; /* Medium Blue */
+}
+
+#adjectivesContainer {
+    background-color: #005b96; /* Darker Blue */
+}
+
+#nouns2Container {
+    background-color: #03396c; /* Dark Blue */
+}
+
+#placesContainer {
+    background-color: #011f4b; /* Very Dark Blue */
+}
+
+.words-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.words-column li {
+    margin-bottom: 5px;
+}
+
+#speakButton {
+    background-color: rgb(60, 116, 135);
+}
+
+#resetButton {
+    background-color: red;
+}
+
+.textgen {
+    width: 50%;
+    padding: 50px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px;
+}
+
+#generatedText {
+    font-size: 25px;
+    color: white;
+}
